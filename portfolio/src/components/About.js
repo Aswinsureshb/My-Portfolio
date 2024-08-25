@@ -15,7 +15,7 @@ export const About = () => {
             I'm Aswin Sureshbabu, a passionate web developer and UX/UI designer
             with a strong foundation in programming and database management.
             With a diverse skill set that includes HTML, CSS, Java, Python, and
-            Flutter, I thrive in creating intuitive and visually appealing
+            Flutter, I thrive in creatin intuitive and visually appealing
             digital experiences. My journey in tech began with a deep interest
             in crafting user-centric interfaces, which led me to complete a UX
             Design Bootcamp at BrainStation. Currently, I'm pursuing a Computer
