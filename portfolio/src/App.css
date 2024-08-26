@@ -297,41 +297,71 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-right: 0.08em solid #666;
 }
 /************ About CSS *************/
-.title{
+.title {
   text-align: center;
-  
-  padding:20px 0px;
+  padding: 20px 0px;
 }
-.title h2{
+
+.title h2 {
   font-size: 35px;
-  font-weight:bold;
+  font-weight: bold;
 }
-.aboutcontainer{
-  
-  display:flex;
+
+.aboutcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.description{
- 
+
+.description {
   text-align: justify;
-  flex: 70%;
-  padding: 40px 50px 50px 50px;
-
-}
-.description h2{
-  font-size: 20px;
-  font-weight: 900;
+  flex: 1 1 100%;
+  padding: 20px;
+  order: 2; /* Description comes second on mobile */
 }
 
-.about-image{
-  flex:30%;
-  
+.about-image {
+  flex: 1 1 100%;
+  text-align: center;
+  padding: 20px;
+  order: 1; /* Image comes first on mobile */
 }
-.about-image img{
-  width:80%;
+
+.about-image img {
+  width: 60%;
   height: auto;
   border-radius: 50px;
- 
 }
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+  .description {
+    flex: 70%;
+    padding: 40px 50px 50px 50px;
+    order: 1; /* Description first on tablets and above */
+  }
+
+  .about-image {
+    flex: 30%;
+    padding: 40px 0px;
+    order: 2; /* Image second on tablets and above */
+  }
+
+  .about-image img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .description {
+    padding: 40px 70px 50px 70px;
+  }
+
+  .about-image img {
+    width: 70%;
+  }
+}
+
 
 
 /************ Skills Css ************/
