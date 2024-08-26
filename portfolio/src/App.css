@@ -369,6 +369,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 20px 0 50px 0;
   position: relative;
 }
+
 .skill-bx {
   background: #151515;
   border-radius: 64px;
@@ -376,32 +377,91 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   padding: 60px 50px;
   margin-top: -60px;
 }
+
 .skill h2 {
-	font-size: 45px;
-	font-weight: 700;
+  font-size: 45px;
+  font-weight: 700;
 }
+
 .skill p {
-    color: #B8B8B8;
-    font-size: 18px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    margin: 14px 0 75px 0;
+  color: #B8B8B8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  margin: 14px 0 75px 0;
 }
+
 .skill-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
-.skill-slider .item img {
-  width: 50%;
-  margin: 0 auto 15px auto;
+
+/* Updated styling for the items in the carousel */
+.skill-slider .item {
+  padding: 10px;
 }
+
+.skill-slider .skill-box {
+  background-color: #252525;
+  border-radius: 10px;
+  padding: 30px 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill-slider .skill-box img {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.skill-slider .skill-box h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.skill-slider .skill-box p {
+  font-size: 14px;
+  color: #B8B8B8;
+}
+
+.skill-slider .item:hover .skill-box {
+  transform: scale(1.05);
+}
+
 .background-image-left {
   top: 28%;
   position: absolute;
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .skill-bx {
+    padding: 40px 30px;
+  }
+
+  .skill h2 {
+    font-size: 35px;
+  }
+
+  .skill p {
+    font-size: 16px;
+    margin: 10px 0 50px 0;
+  }
+
+  .skill-slider .skill-box {
+    padding: 20px;
+  }
+
+  .skill-slider .skill-box img {
+    width: 60%;
+  }
 }
 
 /************ Projects Css ************/
