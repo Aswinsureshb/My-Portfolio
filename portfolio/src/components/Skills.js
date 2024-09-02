@@ -1,6 +1,7 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter4 from "../assets/img/UIDesign.jpg";
+import meter1 from "../assets/img/software engineering.jpg";
+import meter2 from "../assets/img/webdesign.jpg";
+import meter3 from "../assets/img/webdedvelopment.jpg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -30,7 +31,7 @@ export const Skills = () => {
 
   const skillsData = [
     {
-      img: meter1,
+      img: meter3,
       title: "Web Development",
       description: "Creating responsive and interactive websites using modern web technologies."
     },
@@ -40,7 +41,7 @@ export const Skills = () => {
       description: "Designing visually appealing and user-friendly web interfaces and modern technologies."
     },
     {
-      img: meter3,
+      img: meter4,
       title: "UI/UX Design",
       description: "Focusing on user experience and interface design to ensure user satisfaction."
     },

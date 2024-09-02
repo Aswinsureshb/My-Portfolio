@@ -12,6 +12,7 @@ export const Banner = () => {
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
+  const [dateTime, setDateTime] = useState(new Date());
   const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
   const period = 2000;
 
@@ -24,6 +25,17 @@ export const Banner = () => {
       clearInterval(ticker);
     };
   }, [text]);
+
+  useEffect(() => {
+    // Update the date and time every second
+    const timer = setInterval(() => {
+      setDateTime(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -81,6 +93,19 @@ export const Banner = () => {
                     standard dummy text ever since the 1500s, when an unknown
                     printer took a galley of type and scrambled it to make a
                     type specimen book.
+                  </p>
+                  <p>
+                    Current Date and Time:{" "}
+                    {dateTime.toLocaleString("en-US", {
+                      weekday: "long",
+                      year: "numeric",
+                      month: "long",
+                      day: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      second: "2-digit",
+                      hour12: true,
+                    })}
                   </p>
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
