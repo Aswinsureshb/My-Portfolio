@@ -76,7 +76,7 @@ export const Banner = () => {
                     isVisible ? "animate__animated animate__fadeIn" : ""
                   }
                 >
-                  <span className="tagline">Welcome to my Portfolio</span>
+                  {/* <span className="tagline">Welcome to my Portfolio</span> */}
                   <h1>
                     {`Hi! I'm Aswin`}{" "}
                     <span
@@ -107,6 +107,7 @@ export const Banner = () => {
                       hour12: true,
                     })}
                   </p>
+                  
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
@@ -122,7 +123,7 @@ export const Banner = () => {
                 </div>}
             </TrackVisibility> */}
             <div
-              className="banner_image"
+              className="banner_image mobile-hidden"
               style={{
                 width: "400px",
                 height: "400px",
@@ -130,6 +131,7 @@ export const Banner = () => {
                 backgroundSize: "cover",
                 backgroundPosition: "right",
                 borderRadius: "150px",
+                
               }}
             ></div>
           </Col>
