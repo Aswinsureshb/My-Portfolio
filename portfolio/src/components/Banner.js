@@ -107,7 +107,7 @@ export const Banner = () => {
                       hour12: true,
                     })}
                   </p>
-                  
+
                   <button onClick={() => console.log("connect")}>
                     Let’s Connect <ArrowRightCircle size={25} />
                   </button>
@@ -122,7 +122,7 @@ export const Banner = () => {
                   <img src={headerImg} alt="Header Img"/>
                 </div>}
             </TrackVisibility> */}
-            <div
+            {/* <div
               className="banner_image mobile-hidden"
               style={{
                 width: "400px",
@@ -130,10 +130,10 @@ export const Banner = () => {
                 backgroundImage: `url(${bannerImage})`,
                 backgroundSize: "cover",
                 backgroundPosition: "right",
-                borderRadius: "150px",
-                
+                borderRadius: "120px",
+                marginBottom:"20px",
               }}
-            ></div>
+            ></div> */}
           </Col>
         </Row>
       </Container>

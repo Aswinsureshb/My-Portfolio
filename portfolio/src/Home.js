@@ -1,25 +1,51 @@
-import React from 'react';
-import './App.css';
+// App.js
+import { useState, useEffect } from 'react';
+import { NavBar } from './components/NavBar';
+
+function Home() {
+    const [theme, setTheme] = useState('dark');
+
+    // Function to switch CSS files
+    const switchThemeCSS = (theme) => {
+        if (theme === 'dark') {
+            import('./App.css')
+            .then(() => {
+                console.log('Dark mode CSS loaded');
+            })
+            .catch((err) => {
+                console.error('Failed to load light mode CSS:', err);
+            });
+        } else {
+            import('./Applight.css')
+            .then(() => {
+                console.log('Light mode CSS loaded');
+            })
+            .catch((err) => {
+                console.error('Failed to load dark mode CSS:', err);
+            });
+        }
+    };
 
 
-function Home(props) {
-    return(
-        <div>
-        <div className='designer'>
-        <h2 className="card-title">Designer</h2>
-            <p className="card-text">UI/UX designs, wireframes</p>
-            <button className='button'>CLICK</button>
-        </div>
-        <div className='image'> 
-            <h2>I am Aswin Sureshbabu</h2>  
-        </div>
-        <div className='coder'>
-        <h2 className="card-title">&lt;Coder&gt;</h2>
-            <p className="card-text">Front-end web development</p>
-            <button className='button'>CLICK</button>
-        </div>
-        </div>
-    );
+    // const toggleTheme = () => {
+    //     console.log('Current theme before toggling:', theme);
+    //     const newTheme = theme === 'dark' ? 'light' : 'dark';
+    //     console.log('Current theme:', theme, 'Switching to:', newTheme);
+    //     setTheme(newTheme);
+    //     console.log('Theme after toggling:', newTheme);
+    // };
 
+    // useEffect(() => {
+    //     console.log('Theme changed to:', theme);
+    //     switchThemeCSS(theme);
+    // }, [theme]);
+
+    // return (
+    //     <div className="App">
+    //         <NavBar toggleTheme={toggleTheme} currentTheme={theme} />
+           
+    //     </div>
+    // );
 }
+
 export default Home;

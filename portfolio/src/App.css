@@ -226,15 +226,42 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
+.modeswitch {
+  display: flex;
+  margin-left: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.modeswitch label {
+  margin: 10px;
+}
+
+#light .modeswitch label {
+  color: black;
+}
+
+#dark .modeswitch label {
+  color: white;
+}
+
+
 
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/backgroung.jpg');
+  
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#light .banner{
+  background-image: url('./assets/img/background.svg')!important;
+}
+#dark .banner{
+  background-image: url('./assets/img/backgroung.jpg')!important;
 }
 .banner .tagline {
   font-weight: 700;
@@ -305,17 +332,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .title {
   text-align: center;
   padding: 20px 0px;
+  background: linear-gradient(90.21deg, #d80383 -5.91%, #200987 111.58%);
 }
 
 .title h2 {
   font-size: 35px;
   font-weight: bold;
+ 
 }
 
 .aboutcontainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: linear-gradient(90.21deg, #d80383 -5.91%, #200987 111.58%);
 }
 
 .description {
@@ -323,6 +353,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex: 1 1 100%;
   padding: 20px;
   order: 2; /* Description comes second on mobile */
+  
 }
 
 .about-image {
