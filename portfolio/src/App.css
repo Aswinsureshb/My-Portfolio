@@ -102,7 +102,7 @@ nav.navbar.scrolled {
   
 }
 #light .scrolled{
-  background-color: #f7f387;
+  background-color: #ff9500;
 }
 #dark .scrolled{
   background-color: #121212;
@@ -148,7 +148,7 @@ span.navbar-text {
     
 }
 #light .social-icon a{
-  background: rgba(175, 190, 43, 0.1);
+  background-color: #0909091a;
   border: 1px solid rgba(19, 19, 19, 0.5);
 }
 #dark .social-icon a{
@@ -166,7 +166,7 @@ span.navbar-text {
 	transition: 0.3s ease-in-out;
 }
 #light .social-icon a::before{
-  background-color: #161515;
+  background-color: #f6f3f3;
 }
 #dark .social-icon a::before{
   background-color: #ffffff;
@@ -433,7 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, #25406f -5.91%, #6e2d6b 25%, #6c2a42 75%, #6c442b 111.58%);
 }
 #light .title {
-  background: linear-gradient(90.21deg, #faf063 -5.91%, #fd7005 111.58%);
+  background: linear-gradient(90.21deg, #ffd000 -5.91%, #ffdd00 25%, #ffea00 75%, #ffc300 111.58%);
 }
 .title h2 {
   font-size: 35px;
@@ -451,7 +451,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: linear-gradient(90.21deg, #25406f -5.91%, #6e2d6b 25%, #6c2a42 75%, #6c442b 111.58%);
 }
 #light .aboutcontainer{
-  background: linear-gradient(90.21deg, #faf063 -5.91%, #fd7005 111.58%);
+  background: linear-gradient(90.21deg, #ffd000 -5.91%, #ffdd00 25%, #ffea00 75%, #ffc300 111.58%);
 }
 
 .description {
@@ -876,9 +876,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Projects Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #25406f -5.91%, #6e2d6b 25%, #6c2a42 75%, #6c442b 111.58%);
+  
 
   padding: 60px 0 200px 0;
+}
+#dark .contact{
+  background: linear-gradient(90.21deg, #25406f -5.91%, #6e2d6b 25%, #6c2a42 75%, #6c442b 111.58%);
+}
+#light .contact{
+  background: linear-gradient(90.21deg, #ffd000 -5.91%, #ffdd00 25%, #ffea00 75%, #ffc300 111.58%);
 }
 .contact img {
   width: 92%;
@@ -890,10 +896,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form input, .contact form textarea {
   width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  
   border-radius: 20px;
-  color: #fff;
+  
   margin: 0 0 8px 0;
   padding: 18px 26px;
   font-weight: 500;
@@ -901,7 +906,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   transition: 0.3s ease-in-out;
 }
-.contact form input:focus, .contact form textarea:focus {
+#dark .contact form input, .contact form textarea{
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #f7f5f5;
+}
+#light .contact form input, .contact form textarea{
+  background: rgba(230, 71, 87, 0.1);
+  border: 1px solid rgba(70, 27, 4, 0.5);
+  color: #080808;
+}
+#dark .contact form input:focus, .contact form textarea:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+}
+#light .contact form input:focus, .contact form textarea:focus {
   background: rgba(255, 255, 255, 1);
   color: #121212;
 }
@@ -971,16 +990,31 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height:70px;
   margin-left: 5px;
   margin-top: -10px;
+ 
+}
+.connectphone span{
+  margin-left: 25px;
+  margin-top: 22px;
+  color:#000
+
+  
 }
 .connectphone a{
   margin-left: 25px;
   margin-top: 22px;
-
+  text-decoration: none;
   
 }
+
 .phoneimage{
   width:50px;
   height:70px;
+}
+
+.phoneimage1{
+  width:50px;
+  height:70px;
+  margin-top: 8px;
 }
 .contact-topic{
   

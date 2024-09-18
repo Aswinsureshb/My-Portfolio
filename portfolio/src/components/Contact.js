@@ -63,14 +63,14 @@ export const Contact = () => {
               <div className="contactcontainer">
                 <div className="connect">
                   <div className="connectphone">
-                  <img src={phone} class="image" className="phoneimage"/>
-                  <a href="#">+16478971762</a>
+                  <img src={phone} class="image" className="phoneimage1"/>
+                  <span >+16478971762</span>
                   </div>
                   </div>
                 <div className="connect">
                 <div className="connectphone">
                   <img src={email} class="image" className="phoneimage"/>
-                  <a href="https://mail.google.com/mail/u/0/#inbox?compose=new">aswins267@gmail.com</a>
+                  <span>aswins267@gmail.com</span>
                   </div>
                 </div>
                 <div className="connect">

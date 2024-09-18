@@ -75,10 +75,14 @@ export const Skills = () => {
               <div className="skill-bx wow zoomIn">
                 <h2>Skills & Expertise</h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                  <br /> Lorem Ipsum has been the industry's standard dummy
-                  text.
+                  I specialize in UI/UX design, web development, and software
+                  engineering. My expertise includes designing user-friendly
+                  interfaces, developing responsive front-end and back-end
+                  applications, and creating seamless digital experiences. 
+                  
+                  
+                  <br />I focus on delivering efficient, user-centered solutions across
+                  all aspects of design and development.
                 </p>
                 <Carousel
                   responsive={responsive}
