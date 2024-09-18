@@ -23,7 +23,7 @@ export const About = () => {
             full-stack development.
             <br />
             <br />
-            Throughout my career, I've had the opportunity to work on various
+            Throughout my career, I have had the opportunity to work on various
             projects, from developing responsive websites to designing mobile
             applications and managing databases. My experience includes
             interning as a Graphic Design Intern at Rax App Inc., where I
