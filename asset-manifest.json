@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.585448bc.css",
-    "main.js": "/My-Portfolio/static/js/main.10957c54.js",
+    "main.css": "/My-Portfolio/static/css/main.24dcd09f.css",
+    "main.js": "/My-Portfolio/static/js/main.45bbcbb1.js",
     "static/js/453.ace21015.chunk.js": "/My-Portfolio/static/js/453.ace21015.chunk.js",
     "static/media/backgroung.jpg": "/My-Portfolio/static/media/backgroung.280c14b87cbeed28b11c.jpg",
-    "static/media/my_image.jpg": "/My-Portfolio/static/media/my_image.19f506eea840f69750fb.jpg",
     "static/media/webdedvelopment.jpg": "/My-Portfolio/static/media/webdedvelopment.1fac7a969d8beaedb59f.jpg",
+    "static/media/myimage.png": "/My-Portfolio/static/media/myimage.6b1b7c74b720209900f1.png",
     "static/media/color-sharp.png": "/My-Portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/My-Portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/software engineering.jpg": "/My-Portfolio/static/media/software engineering.f13ad3903df0828a4f92.jpg",
@@ -35,12 +35,12 @@
     "static/media/issuu.svg": "/My-Portfolio/static/media/issuu.05e36ba581a01eb6da341ae5b2c0fa08.svg",
     "static/media/arrow2.svg": "/My-Portfolio/static/media/arrow2.3d9522b6fd8f2464b7200ebf2c1bb09a.svg",
     "static/media/arrow1.svg": "/My-Portfolio/static/media/arrow1.0c89b5b635adf255c2822c630aaa6ccf.svg",
-    "main.585448bc.css.map": "/My-Portfolio/static/css/main.585448bc.css.map",
-    "main.10957c54.js.map": "/My-Portfolio/static/js/main.10957c54.js.map",
+    "main.24dcd09f.css.map": "/My-Portfolio/static/css/main.24dcd09f.css.map",
+    "main.45bbcbb1.js.map": "/My-Portfolio/static/js/main.45bbcbb1.js.map",
     "453.ace21015.chunk.js.map": "/My-Portfolio/static/js/453.ace21015.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.585448bc.css",
-    "static/js/main.10957c54.js"
+    "static/css/main.24dcd09f.css",
+    "static/js/main.45bbcbb1.js"
   ]
 }
