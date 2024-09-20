@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import myImage from "../assets/img/my_image.jpg";
+import myImage from "../assets/img/myimage.png";
 
 // Define the About section as a constant
 export const About = () => {
