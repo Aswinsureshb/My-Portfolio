@@ -45,13 +45,15 @@ export const Projects = () => {
       title: "Case Study for Learnio",
       description: "A Skill Sharing Application",
       imgUrl: Learnio,
-      externalLink: "https://issuu.com/aswinsureshbabu/docs/case_study_learnio_final..pptx",
+      externalLink:
+        "https://issuu.com/aswinsureshbabu/docs/case_study_learnio_final..pptx",
     },
     {
       title: "Prototype for Learnio",
       description: "Design & Development",
       imgUrl: Prototype,
-      externalLink: "https://www.figma.com/proto/8ZOS4r2PizlDUec0kQjy3T/UX-Design?page-id=0%3A1&node-id=49-359&viewport=331%2C318%2C0.11&t=R1WfOBSwwHn8vScF-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=49%3A359",
+      externalLink:
+        "https://www.figma.com/proto/8ZOS4r2PizlDUec0kQjy3T/UX-Design?page-id=0%3A1&node-id=49-359&viewport=331%2C318%2C0.11&t=R1WfOBSwwHn8vScF-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=49%3A359",
     },
   ];
 

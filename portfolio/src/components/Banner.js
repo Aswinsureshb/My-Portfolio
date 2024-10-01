@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
+import { HashLink } from "react-router-hash-link";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowDownCircle } from "react-bootstrap-icons";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
-import bannerImage from "../assets/img/myimage.png";
+import resume from "../assets/img/Aswin.Sureshbabu..pdf";
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -107,10 +108,12 @@ export const Banner = () => {
                       hour12: true,
                     })}
                   </p>
-
-                  <button onClick={() => console.log("connect")}>
-                    Let’s Connect <ArrowRightCircle size={25} />
+                  <a href={resume} download="Aswin_Sureshbabu_Resume.pdf" className="resume_link">
+                  <button>
+                    Download Resume <ArrowDownCircle size={25} />
                   </button>
+                  </a>
+                  
                 </div>
               )}
             </TrackVisibility>

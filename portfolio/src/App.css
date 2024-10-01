@@ -297,7 +297,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .modeswitch {
   display: flex;
-  margin-left: 15px;
+  margin-left: 200px;
   justify-content: center;
   align-items: center;
   
@@ -422,6 +422,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .mobile-hidden {
     display: none;
   }
+}
+.resume_link{
+  text-decoration: none;
 }
 /************ About CSS *************/
 .title {

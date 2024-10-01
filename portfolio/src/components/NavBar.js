@@ -39,6 +39,10 @@ export const NavBar = ({ toggleTheme,currentTheme}) => {
           <Navbar.Brand href="/">
             <img src={logo} alt="Logo" />
           </Navbar.Brand>
+          <div className="modeswitch">
+          
+          <ReactSwitch onChange={toggleTheme} checked={currentTheme === theme} />
+        </div>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
             <span className="navbar-toggler-icon"></span>
           </Navbar.Toggle>
@@ -109,12 +113,10 @@ export const NavBar = ({ toggleTheme,currentTheme}) => {
                   <span>Let’s Connect</span>
                 </button>
               </HashLink>
-              <div className="modeswitch">
-          
-          <ReactSwitch onChange={toggleTheme} checked={currentTheme === theme} />
-        </div>
+              
             </span>
           </Navbar.Collapse>
+          
         </Container>
       </Navbar>
     </Router>
