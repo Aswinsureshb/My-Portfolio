@@ -826,18 +826,25 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .proj-imgbx {
   position: relative;
-  border-radius: 30px;
+  border-radius: 25px;
   overflow: hidden;
   margin-bottom: 24px;
+  height:379px;
 }
 .proj-imgbx::before {
   content: "";
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  
   opacity: 0.85;
   position: absolute;
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
+}
+#dark .proj-imgbx::before {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+}
+#light .proj-imgbx::before {
+  background: linear-gradient(90.21deg, #e8ea65 -5.91%, #fbab51 111.58%); 
 }
 .proj-imgbx:hover::before {
   height: 100%;
@@ -851,6 +858,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.5s ease-in-out;
   opacity: 0;
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .proj-imgbx:hover .proj-txtx {
   top: 50%;

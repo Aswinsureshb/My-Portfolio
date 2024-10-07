@@ -4,7 +4,7 @@ import Learnio from "../assets/img/LearnioCaseStudy.png";
 import Prototype from "../assets/img/Prototype.png";
 import portfolio from "../assets/img/portfolio project.png";
 import Rax from "../assets/img/Rax wireframe.png";
-import projImg2 from "../assets/img/project-img2.png";
+import projImg2 from "../assets/img/jwt_token.png";
 import projImg3 from "../assets/img/project-img3.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
@@ -21,17 +21,12 @@ export const Projects = () => {
       externalLink: "https://aswinsureshb.github.io/My-Portfolio",
     },
     {
-      title: "2",
-      description: "Design & Development",
+      title: "User Authentication using JWT",
+      description: "This FastAPI app uses JWT for authentication. Users log in via /login to receive a token stored in cookies, allowing access to protected routes like /welcome (personalized greeting) and /transactions (list of transactions). The app applies CORS middleware and validates tokens before granting access to secure endpoints.",
       imgUrl: projImg2,
-      githubLink: "https://github.com/username/project1",
+      githubLink: "https://github.com/Aswinsureshb/Authentication-using-JWT",
     },
-    {
-      title: "3",
-      description: "Design & Development",
-      imgUrl: projImg3,
-      githubLink: "https://github.com/username/project1",
-    },
+    
   ];
 
   const Uxprojects = [
@@ -58,16 +53,16 @@ export const Projects = () => {
   ];
 
   const otherProjects = [
-    {
-      title: "Other Project 1",
-      description: "Miscellaneous",
-      imgUrl: projImg3,
-    },
-    {
-      title: "Other Project 2",
-      description: "Miscellaneous",
-      imgUrl: projImg2,
-    },
+    // {
+    //   title: "Other Project 1",
+    //   description: "Miscellaneous",
+    //   imgUrl: projImg3,
+    // },
+    // {
+    //   title: "Other Project 2",
+    //   description: "Miscellaneous",
+    //   imgUrl: projImg2,
+    // },
   ];
 
   return (
