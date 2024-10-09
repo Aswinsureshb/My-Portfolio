@@ -470,6 +470,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   text-align: center;
   padding: 20px;
   order: 1; /* Image comes first on mobile */
+  margin-bottom: 10px;
 }
 
 .about-image img {
